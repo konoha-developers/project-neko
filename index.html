@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- add favicon -->
-    <link rel="shortcut icon" href="./assets/cat.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/cat.png" type="image/x-icon" />
     <!-- include css files -->
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css" />
     <title>Project Neko</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Cat Facts</h1>
+    </div>
 
+    <div id="cat-container" class="cat-container">
+      <!-- cat image will go here -->
+    </div>
+
+    <div id="cat-facts" class="cat-facts">
+      <!-- cat facts will be rendered here -->
+    </div>
+
+    <div class="more-button">
+      <button id="load-more-button" onclick="fetchCatFacts()">Load More</button>
+    </div>
     <script src="./scripts/main.js"></script>
-</body>
+  </body>
 </html>

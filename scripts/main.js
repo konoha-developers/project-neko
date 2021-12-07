@@ -4,6 +4,7 @@ console.log(catContainer);
 
 // access the button with fetch-image-button id in html and store the button element inside fetchImageButton variable
 const fetchImageButton = document.getElementById("fetch-image-button");
+console.log(fetchImageButton)
 
 // access the div with cat-facts id in html and store the div element inside catFacts variable
 const catFacts = document.getElementById("cat-facts");
@@ -13,7 +14,7 @@ console.log(catFacts);
 const loadMoreButton = document.getElementById("load-more-button");
 console.log(loadMoreButton);
 
-const fetchCatFacts = () => {
+function fetchCatFacts(){
   // set `Loading...` text while fetching the cat facts
   loadMoreButton.innerText = "Loading...";
 
@@ -38,7 +39,7 @@ const fetchCatFacts = () => {
     });
 };
 
-const fetchCatImage = () => {
+function fetchCatImage(){
   // set `Loading...` text while fetching the cat image
   fetchImageButton.innerText = "Loading...";
 

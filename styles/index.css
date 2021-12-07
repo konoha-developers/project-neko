@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 /* 
-========================
-Reset basic css styles
-========================
+===========================================
+Reset basic css styles, here the asterisk(*) 
+is known as the css universal selector and 
+selects all the elements in html
+===========================================
 */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,27 +14,63 @@ Reset basic css styles
   font-family: "Roboto", sans-serif;
 }
 
+/* 
+==============================
+change body background color
+==============================
+*/
 body {
   background: #ffebee;
 }
 
+/* 
+===========================================
+select and style the h1 tag having a 
+parent element with class `heading` in html
+===========================================
+*/
 .heading h1 {
   text-align: center;
   padding: 1rem;
   color: red;
+  letter-spacing: 1px;
 }
 
+/* 
+=============================================
+select the element with class cat-container
+=============================================
+*/
 .cat-container {
   display: flex;
   justify-content: center;
   padding: 1rem;
 }
 
+/* 
+==============================================
+select and style the img tag having 
+the parent element with class `cat-container` 
+in html
+==============================================
+*/
 .cat-container img {
   width: 95%;
   max-width: 400px;
   height: 400px;
   border-radius: 10px;
+}
+
+/* 
+====================================
+all other selectors below works as 
+shown in above comments
+====================================
+*/
+
+.fetch-image {
+  display: flex;
+  justify-content: center;
 }
 
 .cat-facts {
@@ -65,7 +102,7 @@ body {
   margin-bottom: 5rem;
 }
 
-.more-button button {
+button {
   color: black;
   padding: 5px 10px;
   border: 1px solid red;
@@ -73,8 +110,19 @@ body {
   cursor: pointer;
   border-radius: 2px;
   background: rgb(255, 255, 177);
+  min-width: 150px;
 }
 
-.more-button button:hover {
+/* 
+=====================================
+hover is a pseudo-class, 
+pseudo-class is used to select 
+an element in a specific state,
+for example here we select a button
+when it is being hovered and change 
+its backgorund color
+=====================================
+*/
+button:hover {
   background: yellow;
 }

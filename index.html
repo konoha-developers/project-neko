@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- below meta tags will set default image for our website when shared on social media -->
     <meta property="og:image" content="./assets/cat.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
-    <!-- add favicon -->
+    <!-- add favicon(icon that appears on the browser tab) -->
     <link rel="shortcut icon" href="./assets/cat.png" type="image/x-icon" />
-    <!-- include css files -->
+    <!-- include css file/s -->
     <link rel="stylesheet" href="./styles/index.css" />
+    <!-- set title that appears on the browser tab -->
     <title>Project Neko</title>
   </head>
   <body>
+    <!-- heading div -->
     <div class="heading">
       <h1>Cat Facts</h1>
     </div>
 
     <div id="cat-container" class="cat-container">
-      <!-- cat image will go here -->
+      <!-- cat image will be shown(rendered) here using javascript-->
+    </div>
+
+    <!-- button to fetch image -->
+    <div class="fetch-image">
+      <button id="fetch-image-button" onclick="fetchCatImage()">
+        Fetch New Image
+      </button>
     </div>
 
     <div id="cat-facts" class="cat-facts">
-      <!-- cat facts will be rendered here -->
+      <!-- cat facts will be shown(rendered) here using javascript-->
     </div>
 
+    <!-- button to load more facts -->
     <div class="more-button">
       <button id="load-more-button" onclick="fetchCatFacts()">Load More</button>
     </div>
+
+    <!-- load the javascript -->
     <script src="./scripts/main.js"></script>
   </body>
 </html>

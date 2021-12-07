@@ -8,8 +8,7 @@ const fetchCatFacts = () => {
   fetch("https://cat-fact.herokuapp.com/facts/random?amount=3")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-
+      // console.log(data);
       data.forEach((fact) => {
         catFacts.innerHTML += `
         <div  class="fact-block">
@@ -30,7 +29,7 @@ const fetchCatImage = () => {
     .then((res) => res.json())
     .then((data) => {
       const result = `<img id="cat-image" src="https://cataas.com/${data.url}">`;
-      console.log(data);
+      // console.log(data);
 
       catContainer.innerHTML = result;
     });
